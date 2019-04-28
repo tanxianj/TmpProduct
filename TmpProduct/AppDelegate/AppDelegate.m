@@ -123,7 +123,7 @@
     }
 //    [TXJNotificationViewController addLocalNoticeWithNotificationType:NotificationTypeTwo title:@"收款到账通知" body:userInfo[@"aps"][@"alert"][@"body"]];
     [self GotoBDYYBB:userInfo];
-    completionHandler();// 系统要求执行这个方法 
+    completionHandler();//系统要求执行这个方法 
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
