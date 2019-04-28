@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RefundAfterSaleSectionFooter">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i7A-aD-LiL">
+                    <rect key="frame" x="12" y="0.0" width="351" height="70"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iee-9u-Gj7">
+                            <rect key="frame" x="12" y="27" width="37.5" height="17"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCH-ea-QKG">
+                            <rect key="frame" x="288" y="10" width="51" height="15"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="已完成" image="checked-green">
+                                <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8W5-7j-dQP">
+                            <rect key="frame" x="303.5" y="43" width="35.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="iee-9u-Gj7" firstAttribute="centerY" secondItem="i7A-aD-LiL" secondAttribute="centerY" id="4P3-vl-GBM"/>
+                        <constraint firstAttribute="bottom" secondItem="8W5-7j-dQP" secondAttribute="bottom" constant="10" id="Ifp-9m-vEu"/>
+                        <constraint firstItem="HCH-ea-QKG" firstAttribute="top" secondItem="i7A-aD-LiL" secondAttribute="top" constant="10" id="Rtj-rF-mQf"/>
+                        <constraint firstAttribute="trailing" secondItem="HCH-ea-QKG" secondAttribute="trailing" constant="12" id="SUo-LZ-vns"/>
+                        <constraint firstItem="8W5-7j-dQP" firstAttribute="trailing" secondItem="HCH-ea-QKG" secondAttribute="trailing" id="lU1-QG-tGj"/>
+                        <constraint firstItem="iee-9u-Gj7" firstAttribute="leading" secondItem="i7A-aD-LiL" secondAttribute="leading" constant="12" id="pfd-if-e4i"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="i7A-aD-LiL" secondAttribute="trailing" constant="12" id="IzY-BU-odM"/>
+                <constraint firstItem="i7A-aD-LiL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="RW6-NY-AZq"/>
+                <constraint firstItem="i7A-aD-LiL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="pTZ-63-ozZ"/>
+                <constraint firstAttribute="bottom" secondItem="i7A-aD-LiL" secondAttribute="bottom" id="y1q-11-9n3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="created_at" destination="8W5-7j-dQP" id="X07-Tt-g6k"/>
+                <outlet property="status" destination="HCH-ea-QKG" id="37b-fM-IJv"/>
+                <outlet property="super_view" destination="i7A-aD-LiL" id="gEJ-hd-yYC"/>
+                <outlet property="total_money" destination="iee-9u-Gj7" id="DyF-GB-VpP"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="checked-green" width="14" height="14"/>
+    </resources>
+</document>

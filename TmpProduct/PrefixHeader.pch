@@ -1,0 +1,53 @@
+//
+//  PrefixHeader.pch
+//  TmpProduct
+//
+//  Created by 谭显敬 on 2019/4/12.
+//  Copyright © 2019年 谭显敬. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#ifdef DEBUG
+#define txjLog(FORMAT, ...)  fprintf(stderr,"<%s %d>:%s\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String])
+#else
+#define txjLog(FORMAT, ...)  nil
+#endif
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "ViewController.h"
+#import "HTTPSessionManager.h"
+#import "UIView+SYDefaultView.h"
+#import "Header.h"
+#import "TableView.h"
+#import "UserModel.h"
+#import "UserInfoAndShopModel.h"
+#import "YZActionSheet.h"
+#import "UIDevice+Category.h"
+#import "UIColor+AppColors.h"
+#import "UIColor+Hex.h"
+#import "UIViewController+Category.h"
+#import "UIViewController+NavigationItems.h"
+#import <Masonry.h>
+#import "XCToast.h"
+#import <FDFullscreenPopGesture/UINavigationController+FDFullscreenPopGesture.h>
+#import "BaseClassTool.h"
+#import "NavigationController.h"
+#import "NavigationBar.h"
+#import "UITableViewCell+ReuseIdentifier.h"
+#import "TxjCategory.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <SDWebImage/UIView+WebCache.h>
+#import "XCRefreshFooter.h"
+#import "YZRefreshHeader.h"
+#import <TZImagePickerController.h>
+#import <MBProgressHUD+JDragon.h>
+#import <YYText.h>
+#import "TXJSelectDateView.h"
+#import "LoadingView.h"
+#import "ImageUrlTool.h"
+
+#define SHOUKUANYUYINTIXING @"shoukuanyuyintixing"
+#define XIANSHANGDINGDANYUYINTIXING @"xianshangdingdanyuyintix"
+#define XITONGTONGZTUISHONG @"xitongtongztuis"
+#endif /* PrefixHeader_pch */

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="APP_Search_View">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DK3-Id-ZQ7">
+                    <rect key="frame" x="12" y="0.0" width="319" height="44"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agR-Eb-QLE">
+                    <rect key="frame" x="331" y="0.0" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="agR-Eb-QLE" secondAttribute="height" multiplier="1:1" id="IFE-vY-4MD"/>
+                    </constraints>
+                    <state key="normal" image="search"/>
+                    <connections>
+                        <action selector="searchBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="RqH-rX-As1"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="DK3-Id-ZQ7" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="BgG-C6-Sg9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="agR-Eb-QLE" secondAttribute="trailing" id="JMN-0v-ukz"/>
+                <constraint firstItem="agR-Eb-QLE" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="QON-Yl-mUf"/>
+                <constraint firstItem="DK3-Id-ZQ7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="bsi-iu-AdC"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="agR-Eb-QLE" secondAttribute="bottom" id="q9W-hH-p2X"/>
+                <constraint firstItem="DK3-Id-ZQ7" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="rNN-Sf-EA3"/>
+                <constraint firstItem="agR-Eb-QLE" firstAttribute="leading" secondItem="DK3-Id-ZQ7" secondAttribute="trailing" id="uyA-t2-6AL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="searchTextFld" destination="DK3-Id-ZQ7" id="1sh-wh-xL8"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="54"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="search" width="18" height="18"/>
+    </resources>
+</document>

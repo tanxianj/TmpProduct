@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CapitalFlowHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sYN-Lq-bu5">
+                    <rect key="frame" x="12" y="10" width="33" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="筛选:">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="shaixuanBnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="KU6-OT-pXy"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzw-wR-sen">
+                    <rect key="frame" x="55" y="16" width="197" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="titleEdgeInsets" minX="-25" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="185" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="2019-04-01——2019-04-01" image="Choice">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="shaixuanBnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="vNV-N1-vKi"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p3w-FM-t8k">
+                    <rect key="frame" x="0.0" y="50" width="186.5" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="平台收入:￥0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgi-Rg-Vhm">
+                            <rect key="frame" x="12" y="10" width="162.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="平台划账:￥0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xiX-gT-7bf">
+                            <rect key="frame" x="12" y="33" width="162.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="vgi-Rg-Vhm" firstAttribute="leading" secondItem="p3w-FM-t8k" secondAttribute="leading" constant="12" id="ah2-Sa-Q3y"/>
+                        <constraint firstAttribute="bottom" secondItem="xiX-gT-7bf" secondAttribute="bottom" constant="10" id="e0f-IU-cJY"/>
+                        <constraint firstItem="vgi-Rg-Vhm" firstAttribute="top" secondItem="p3w-FM-t8k" secondAttribute="top" constant="10" id="gM7-3H-VBd"/>
+                        <constraint firstAttribute="trailing" secondItem="vgi-Rg-Vhm" secondAttribute="trailing" constant="12" id="hAZ-vf-1lV"/>
+                        <constraint firstAttribute="trailing" secondItem="xiX-gT-7bf" secondAttribute="trailing" constant="12" id="pV7-eF-gMe"/>
+                        <constraint firstAttribute="height" constant="60" id="rIK-S2-fHb"/>
+                        <constraint firstItem="xiX-gT-7bf" firstAttribute="leading" secondItem="p3w-FM-t8k" secondAttribute="leading" constant="12" id="uOW-gz-Rxg"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dR8-nC-KS8">
+                    <rect key="frame" x="188.5" y="50" width="186.5" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="现金收入:￥0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cja-WS-5dp">
+                            <rect key="frame" x="12" y="21.5" width="162.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="cja-WS-5dp" firstAttribute="centerX" secondItem="dR8-nC-KS8" secondAttribute="centerX" id="8kR-f5-hoJ"/>
+                        <constraint firstItem="cja-WS-5dp" firstAttribute="leading" secondItem="dR8-nC-KS8" secondAttribute="leading" constant="12" id="Ax3-bQ-a4z"/>
+                        <constraint firstAttribute="trailing" secondItem="cja-WS-5dp" secondAttribute="trailing" constant="12" id="JnQ-RG-KbE"/>
+                        <constraint firstItem="cja-WS-5dp" firstAttribute="centerY" secondItem="dR8-nC-KS8" secondAttribute="centerY" id="aKW-sa-xau"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="sYN-Lq-bu5" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="FMW-ec-aRX"/>
+                <constraint firstItem="dR8-nC-KS8" firstAttribute="height" secondItem="p3w-FM-t8k" secondAttribute="height" id="Hyz-Gj-5Ga"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="dR8-nC-KS8" secondAttribute="bottom" constant="10" id="Of4-pl-RFz"/>
+                <constraint firstItem="dR8-nC-KS8" firstAttribute="leading" secondItem="p3w-FM-t8k" secondAttribute="trailing" constant="2" id="POc-fy-ub4"/>
+                <constraint firstItem="sYN-Lq-bu5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="PtB-8y-pb9"/>
+                <constraint firstItem="dR8-nC-KS8" firstAttribute="width" secondItem="p3w-FM-t8k" secondAttribute="width" id="grL-mZ-pHT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="p3w-FM-t8k" secondAttribute="bottom" constant="10" id="lFE-vc-N82"/>
+                <constraint firstItem="gzw-wR-sen" firstAttribute="leading" secondItem="sYN-Lq-bu5" secondAttribute="trailing" constant="10" id="mEW-Cu-69L"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="dR8-nC-KS8" secondAttribute="trailing" id="xDc-f3-dDv"/>
+                <constraint firstItem="gzw-wR-sen" firstAttribute="centerY" secondItem="sYN-Lq-bu5" secondAttribute="centerY" id="z0P-To-0bJ"/>
+                <constraint firstItem="p3w-FM-t8k" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="zgb-Xc-WgV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="order_offline_money" destination="cja-WS-5dp" id="TTr-MA-apt"/>
+                <outlet property="order_online_money" destination="vgi-Rg-Vhm" id="xo2-XJ-Vaa"/>
+                <outlet property="remit_account" destination="xiX-gT-7bf" id="JAQ-ZN-yfU"/>
+                <outlet property="saixuan" destination="gzw-wR-sen" id="iiE-K5-usT"/>
+            </connections>
+            <point key="canvasLocation" x="32.799999999999997" y="53.973013493253376"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Choice" width="14" height="14"/>
+    </resources>
+</document>

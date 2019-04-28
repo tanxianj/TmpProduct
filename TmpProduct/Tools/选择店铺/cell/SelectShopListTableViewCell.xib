@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="87" id="KGk-i7-Jjw" customClass="SelectShopListTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="321" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="321" height="86.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="crh-jx-poc">
+                        <rect key="frame" x="12" y="0.0" width="265" height="43.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifl-bd-Vpf">
+                        <rect key="frame" x="12" y="43.5" width="265" height="43"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sS3-pN-4kg">
+                        <rect key="frame" x="287" y="32" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="ATh-wl-cvV"/>
+                            <constraint firstAttribute="height" constant="22" id="lcs-xi-agm"/>
+                        </constraints>
+                        <state key="normal" image="hollow circle"/>
+                        <state key="selected" image="checked"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sS3-pN-4kg" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="0j9-i3-LgG"/>
+                    <constraint firstItem="crh-jx-poc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="CWQ-gO-yWP"/>
+                    <constraint firstItem="ifl-bd-Vpf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="Cnd-W5-EoY"/>
+                    <constraint firstItem="sS3-pN-4kg" firstAttribute="leading" secondItem="crh-jx-poc" secondAttribute="trailing" constant="10" id="GHa-Au-rqB"/>
+                    <constraint firstItem="ifl-bd-Vpf" firstAttribute="trailing" secondItem="crh-jx-poc" secondAttribute="trailing" id="Vvv-AI-Eiu"/>
+                    <constraint firstAttribute="trailing" secondItem="sS3-pN-4kg" secondAttribute="trailing" constant="12" id="YFk-RE-KJW"/>
+                    <constraint firstAttribute="bottom" secondItem="ifl-bd-Vpf" secondAttribute="bottom" id="Zcn-WC-gnW"/>
+                    <constraint firstItem="ifl-bd-Vpf" firstAttribute="height" secondItem="crh-jx-poc" secondAttribute="height" id="du3-pu-Lwk"/>
+                    <constraint firstItem="ifl-bd-Vpf" firstAttribute="top" secondItem="crh-jx-poc" secondAttribute="bottom" id="jnS-fD-zL3"/>
+                    <constraint firstItem="crh-jx-poc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="mb8-zM-REi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="desc" destination="ifl-bd-Vpf" id="DTe-oS-FkL"/>
+                <outlet property="image" destination="sS3-pN-4kg" id="0Yf-mR-ug6"/>
+                <outlet property="title" destination="crh-jx-poc" id="iPe-Oz-bIu"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="75.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checked" width="18" height="18"/>
+        <image name="hollow circle" width="18" height="18"/>
+    </resources>
+</document>

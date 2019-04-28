@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SelectPayTypeCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="161" height="109"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="161" height="109"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WeChat 2" translatesAutoresizingMaskIntoConstraints="NO" id="LqU-Bz-kGR">
+                        <rect key="frame" x="57" y="10" width="48" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="48" id="f3G-mA-Xed"/>
+                            <constraint firstAttribute="height" constant="48" id="nvR-QC-Cps"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjp-CZ-ZBL">
+                        <rect key="frame" x="67" y="87" width="26.5" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="wjp-CZ-ZBL" secondAttribute="bottom" constant="10" id="Q3a-Kv-NtW"/>
+                <constraint firstItem="LqU-Bz-kGR" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="UXh-gt-E6F"/>
+                <constraint firstItem="LqU-Bz-kGR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="bbp-7I-wAS"/>
+                <constraint firstItem="wjp-CZ-ZBL" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="ySf-Qp-O00"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="161" height="109"/>
+            <connections>
+                <outlet property="image" destination="LqU-Bz-kGR" id="G4q-Oe-TY4"/>
+                <outlet property="title" destination="wjp-CZ-ZBL" id="Ii9-Io-RqL"/>
+            </connections>
+            <point key="canvasLocation" x="90.5" y="83.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="WeChat 2" width="48" height="48"/>
+    </resources>
+</document>

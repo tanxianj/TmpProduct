@@ -1,0 +1,20 @@
+[
+    {
+        "ClassName":"HomeViewController",
+        "image":"homepage",
+        "selectedImage":"homepage_checked",
+        "title":"首页"
+    },
+    {
+         "ClassName":"MessageNotificationViewController",
+         "image":"message",
+         "selectedImage":"message_checked",
+         "title":"消息"
+    },
+    {
+        "ClassName":"MeViewController",
+        "image":"mine",
+        "selectedImage":"mine_checked",
+        "title":"我的"
+    }
+]

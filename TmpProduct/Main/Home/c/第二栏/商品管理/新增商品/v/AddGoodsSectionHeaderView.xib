@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AddGoodsSectionHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2d-sX-Aje">
+                    <rect key="frame" x="12" y="13.5" width="35.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sd5-2L-Ejm">
+                    <rect key="frame" x="319" y="0.0" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="ClG-Un-RNb"/>
+                        <constraint firstAttribute="width" constant="44" id="XUX-rg-7NS"/>
+                    </constraints>
+                    <state key="normal" image="plus"/>
+                    <connections>
+                        <action selector="addBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="unm-zW-xGU"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOX-Hf-mGX">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="bPO-pE-1xU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="U2d-sX-Aje" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="1Xy-Tm-HBJ"/>
+                <constraint firstItem="HOX-Hf-mGX" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="5bT-jA-a7O"/>
+                <constraint firstItem="sd5-2L-Ejm" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="B32-aG-Jxe"/>
+                <constraint firstAttribute="trailing" secondItem="HOX-Hf-mGX" secondAttribute="trailing" id="Ryw-as-3Cf"/>
+                <constraint firstItem="U2d-sX-Aje" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="W29-0F-TKb"/>
+                <constraint firstItem="HOX-Hf-mGX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dFc-eO-hVS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="sd5-2L-Ejm" secondAttribute="trailing" constant="12" id="h42-J0-evS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="titleLab" destination="U2d-sX-Aje" id="jcb-Tz-BZu"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="59"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="plus" width="18" height="18"/>
+    </resources>
+</document>
